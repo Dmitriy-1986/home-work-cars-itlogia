@@ -11,3 +11,11 @@ document.addEventListener("DOMContentLoaded", function() {
         elem.style.backgroundPositionX = '0' + (0.2 * window.pageYOffset) + 'px';
     })
 });
+
+const  carButtons = document.querySelectorAll('.car-button');
+
+for(const carButton of carButtons) {    
+    carButton.addEventListener('click', () => {
+        document.querySelector('.price').scrollIntoView({behavior: "smooth"});
+    })
+};
