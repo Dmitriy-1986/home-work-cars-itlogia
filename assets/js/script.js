@@ -1,4 +1,5 @@
 'use strict';
+'use strict';
 
 document.addEventListener("DOMContentLoaded", function() {
     let layer = document.querySelector('.price-image');
@@ -20,6 +21,17 @@ for(const carButton of carButtons) {
     })
 };
 
+const menuCars = document.querySelector('#menu-cars');
+
+menuCars.addEventListener('click', () => {
+    document.querySelector('#cars').scrollIntoView({behavior: "smooth"});
+});
+
+const menuPrice = document.querySelector('#menu-price');
+
+menuPrice.addEventListener('click', () => {
+    document.querySelector('#price').scrollIntoView({behavior: "smooth"});
+})
 
 const priceButton = document.querySelector('#price-button');
 let priceMessage = document.querySelector('#price-message');
@@ -39,3 +51,5 @@ priceButton.addEventListener('click', () => {
         priceMessage.className = 'color-blue';
     }
 });
+
+
