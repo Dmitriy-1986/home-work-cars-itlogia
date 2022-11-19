@@ -14,6 +14,12 @@ document.addEventListener("DOMContentLoaded", function() {
 });
 
 //Плавная прокрутка по клику на кнопку
+const viewCar = document.querySelector('#view-car');
+
+viewCar.addEventListener('click', () => {
+    document.querySelector('.price').scrollIntoView({behavior: "smooth"});
+});
+
 const  carButtons = document.querySelectorAll('.car-button');
 
 for(const carButton of carButtons) {    
