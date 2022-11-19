@@ -224,6 +224,20 @@
     left: 401px;
 }
 
+.color-blue, .color-red  {
+    font-weight: bold;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.color-blue {
+    color: blue;
+}
+
+.color-red {
+    color: red;
+}
+
 .footer {
     border-top: 1px solid #E5E5E5;
     padding: 25px 0;
