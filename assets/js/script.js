@@ -1,6 +1,6 @@
 'use strict';
-'use strict';
 
+//Паралакс эффект
 document.addEventListener("DOMContentLoaded", function() {
     let layer = document.querySelector('.price-image');
     document.addEventListener('mousemove', (event) => {
@@ -13,6 +13,7 @@ document.addEventListener("DOMContentLoaded", function() {
     })
 });
 
+//Плавная прокрутка по клику на кнопку
 const  carButtons = document.querySelectorAll('.car-button');
 
 for(const carButton of carButtons) {    
@@ -33,6 +34,7 @@ menuPrice.addEventListener('click', () => {
     document.querySelector('#price').scrollIntoView({behavior: "smooth"});
 })
 
+//Валидация формы
 const priceButton = document.querySelector('#price-button');
 let priceMessage = document.querySelector('#price-message');
 
